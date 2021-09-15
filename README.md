@@ -8,4 +8,14 @@ Creates an SVG Element.
 
 ## createNanoidenticon
 
-Returns an object containing svg and path attributes. Easier to work with for certain ui libraries.
+Returns an object containing svg and path attributes. Easier to work with for certain ui libraries e.g. with JSX:
+
+```jsx
+const nanoidenticon = createNanoidenticon(address);
+
+<svg viewBox={nanoidenticon.address}>
+  {nanoidenticon.paths.map((v) => (
+    <path {...v} />
+  ))}
+</svg>;
+```
