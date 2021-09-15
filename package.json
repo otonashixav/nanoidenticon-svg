@@ -1,0 +1,29 @@
+{
+  "name": "nanoidenticon-svg",
+  "version": "1.0.0",
+  "description": "Library for generating Nanoidenticon SVGs.",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "nano",
+    "nanoidenticon",
+    "svg"
+  ],
+  "author": "",
+  "license": "WTFPL",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
